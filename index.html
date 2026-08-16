@@ -3,422 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Sup Brand — a more relaxed brand that fosters a relaxed culture.">
     <meta name="google-site-verification" content="WHXtkgLDhK5DAgvb4q8dHIwgNoqpGXokUqNb6NjOAAs">
-
-    <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="sup_logo.JPG">
-
+    <link rel="stylesheet" href="index.css">
     <title>Sup Brand | Relaxed Culture</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="header-inner">
+            <a class="logo-link" href="index.html" aria-label="Sup Brand home">
+                <img src="sup_logo.JPG" alt="Sup Brand logo" class="logo">
+                <span>Sup Brand</span>
+            </a>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-    <header>
-        <a href="index.html" aria-label="Sup Brand Home">
-            <img src="sup_logo.JPG" alt="Sup Brand Logo" id="logo">
-        </a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+            </nav>
 
-        <span class="brand-name">Sup Brand</span>
+            <button class="menu-toggle" id="menuToggle" type="button"
+                    aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
 
-        <!-- Desktop navigation -->
-        <ul class="desktop-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-
-        <!-- Mobile menu button -->
-        <ul class="mobile-menu">
-            <li>
-                <a id="menu" href="#" aria-label="Open menu" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="25" height="25"
-                         viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="#fff"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </a>
-            </li>
-        </ul>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+        </nav>
     </header>
 
-    <!-- =========================
-         MOBILE NAVIGATION
-    ========================== -->
-    <div id="menu-bar">
-        <ul>
-            <li>
-                <a href="index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="24" height="24"
-                         viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="#fff"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                    </svg>
-                    &nbsp; Home
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <span class="label">WELCOME TO SUP BRAND</span>
+                    <h1>Relaxed style.<br><span>Real culture.</span></h1>
+                    <p>
+                        A more relaxed brand, fostering a relaxed culture through
+                        everyday clothing, accessories and drinkware.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-light" href="#collection">Shop the collection</a>
+                        <a class="text-link" href="about.html">Discover our story →</a>
+                    </div>
+                </div>
+
+                <div class="hero-product">
+                    <img src="official_sup_t-shirt.jpeg" alt="Sup Brand official T-shirt">
+                    <div class="hero-badge">
+                        <strong>SUP</strong>
+                        <span>Wear the culture</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PRODUCTS -->
+        <section class="section" id="collection">
+            <div class="section-head">
+                <div>
+                    <span class="label">FEATURED</span>
+                    <h2>The Sup essentials</h2>
+                </div>
+                <p>Simple pieces made for everyday life.</p>
+            </div>
+
+            <div class="featured-grid">
+                <article class="featured-card featured-large">
+                    <a href="white_cap.JPG">
+                        <img src="white_cap.JPG" alt="White Sup Brand cap" loading="lazy">
+                    </a>
+                    <div class="card-overlay">
+                        <span>01</span>
+                        <h3>White Cap</h3>
+                        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp →</a>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <a href="black_t-shirt.JPG">
+                        <img src="black_t-shirt.JPG" alt="Black Sup Brand T-shirt" loading="lazy">
+                    </a>
+                    <div class="card-overlay">
+                        <span>02</span>
+                        <h3>Black T-shirt</h3>
+                        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp →</a>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <a href="white_water_bottle.JPG">
+                        <img src="white_water_bottle.JPG" alt="White Sup Brand water bottle" loading="lazy">
+                    </a>
+                    <div class="card-overlay">
+                        <span>03</span>
+                        <h3>White Bottle</h3>
+                        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp →</a>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <a href="hand_band.JPG">
+                        <img src="hand_band.JPG" alt="Sup Brand hand band" loading="lazy">
+                    </a>
+                    <div class="card-overlay">
+                        <span>04</span>
+                        <h3>Hand Band</h3>
+                        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SHOP CATEGORIES -->
+        <section class="section categories">
+            <div class="section-head">
+                <div>
+                    <span class="label">SHOP</span>
+                    <h2>Something for every moment</h2>
+                </div>
+            </div>
+
+            <div class="category-grid">
+                <a class="category-card" href="#clothing">
+                    <img src="sup_t-shirt.jpg" alt="Sup Brand clothing" loading="lazy">
+                    <div><span>01</span><h3>Clothing</h3><b>Explore →</b></div>
                 </a>
-            </li>
 
-            <li>
-                <a href="about.html">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="25" height="25"
-                         viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="#fff"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 16 16 12 12 8"></polyline>
-                        <line x1="8" y1="12" x2="16" y2="12"></line>
-                    </svg>
-                    &nbsp; About Us
+                <a class="category-card" href="#family">
+                    <img src="twin_longsleeves.jpg" alt="Sup Brand family wear" loading="lazy">
+                    <div><span>02</span><h3>Family Wear</h3><b>Explore →</b></div>
                 </a>
-            </li>
-        </ul>
-    </div>
 
-    <!-- =========================
-         DESKTOP CONTENT
-    ========================== -->
-    <main class="body">
+                <a class="category-card" href="#drinkware">
+                    <img src="mug_coffee.jpg" alt="Sup Brand drinkware" loading="lazy">
+                    <div><span>03</span><h3>Drinkware</h3><b>Explore →</b></div>
+                </a>
 
-        <h1>
-            Welcome to Sup Brand official website.
-            A more relaxed brand, that fosters a relaxed culture!
-        </h1>
+                <a class="category-card" href="#new">
+                    <img src="market_bag.jpg" alt="Sup Brand new products" loading="lazy">
+                    <div><span>04</span><h3>New Products</h3><b>Explore →</b></div>
+                </a>
+            </div>
+        </section>
 
-        <h2>Sup Brand Caps, T-shirts, Water Bottles and Hand Bands</h2>
+        <!-- CLOTHING -->
+        <section class="section product-section" id="clothing">
+            <div class="section-head compact">
+                <div>
+                    <span class="label">CLOTHING</span>
+                    <h2>Plain logo collection</h2>
+                </div>
+            </div>
 
-        <a href="white_cap.JPG">
-            <img src="white_cap.JPG" alt="White Sup Brand Cap" loading="lazy">
-        </a>
+            <div class="product-grid">
+                <article class="product">
+                    <a href="sup_t-shirt.jpg"><img src="sup_t-shirt.jpg" alt="Plain logo T-shirt" loading="lazy"></a>
+                    <div><h3>Plain Logo T-shirt</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+                <article class="product">
+                    <a href="sup_male_t-shirt.jpg"><img src="sup_male_t-shirt.jpg" alt="Plain logo men's T-shirt" loading="lazy"></a>
+                    <div><h3>Plain Logo T-shirt</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+                <article class="product">
+                    <a href="female_sup_cap.jpg"><img src="female_sup_cap.jpg" alt="Plain logo cap" loading="lazy"></a>
+                    <div><h3>Plain Logo Cap</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+                <article class="product">
+                    <a href="female_longsleeve.jpg"><img src="female_longsleeve.jpg" alt="Plain logo long sleeve" loading="lazy"></a>
+                    <div><h3>Plain Long Sleeve</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+            </div>
+        </section>
 
-        <a href="official_sup_t-shirt.jpeg">
-            <img src="official_sup_t-shirt.jpeg" alt="White Sup Brand T-shirt" loading="lazy">
-        </a>
+        <!-- FAMILY -->
+        <section class="section product-section" id="family">
+            <div class="section-head compact">
+                <div>
+                    <span class="label">FAMILY</span>
+                    <h2>Parents & babies</h2>
+                </div>
+            </div>
 
-        <a href="white_water_bottle.JPG">
-            <img src="white_water_bottle.JPG" alt="White Sup Brand Water Bottle" loading="lazy">
-        </a>
+            <div class="product-grid">
+                <article class="product">
+                    <a href="twin_longsleeves.jpg"><img src="twin_longsleeves.jpg" alt="Twin long sleeves" loading="lazy"></a>
+                    <div><h3>Twin Long Sleeves</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+                <article class="product">
+                    <a href="baby_longsleeve.jpeg"><img src="baby_longsleeve.jpeg" alt="Baby long sleeve" loading="lazy"></a>
+                    <div><h3>Baby Long Sleeve</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+                <article class="product">
+                    <a href="cover_all_for_baby.jpeg"><img src="cover_all_for_baby.jpeg" alt="Baby cover all" loading="lazy"></a>
+                    <div><h3>Baby Cover All</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+                <article class="product">
+                    <a href="sup_cup.jpg"><img src="sup_cup.jpg" alt="Sup Brand tea cup" loading="lazy"></a>
+                    <div><h3>Tea Cup</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+            </div>
+        </section>
 
-        <a href="black_cap.JPG">
-            <img src="black_cap.JPG" alt="Black Sup Brand Cap" loading="lazy">
-        </a>
+        <!-- DRINKWARE -->
+        <section class="section product-section" id="drinkware">
+            <div class="section-head compact">
+                <div>
+                    <span class="label">DRINKWARE</span>
+                    <h2>Water, hot & ice</h2>
+                </div>
+            </div>
 
-        <br><br>
+            <div class="product-grid">
+                <article class="product">
+                    <a href="sup_cup.jpg"><img src="sup_cup.jpg" alt="Sup tea cup" loading="lazy"></a>
+                    <div><h3>Tea Cup</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+                <article class="product">
+                    <a href="mug_on_table.jpg"><img src="mug_on_table.jpg" alt="Glass mug" loading="lazy"></a>
+                    <div><h3>Glass Mug</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+                <article class="product">
+                    <a href="mug_coffee.jpg"><img src="mug_coffee.jpg" alt="Coffee mug" loading="lazy"></a>
+                    <div><h3>Coffee Mug</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+                <article class="product">
+                    <a href="cold_cap.jpg"><img src="cold_cap.jpg" alt="Cold cap" loading="lazy"></a>
+                    <div><h3>Cold Cap</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div>
+                </article>
+            </div>
+        </section>
 
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">
-            <button>Buy White Cap on WhatsApp</button>
-        </a>
+        <!-- NEW PRODUCTS -->
+        <section class="section product-section" id="new">
+            <div class="section-head compact">
+                <div>
+                    <span class="label">NEW</span>
+                    <h2>Fresh products</h2>
+                </div>
+            </div>
 
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">
-            <button>Buy White T-shirt on WhatsApp</button>
-        </a>
+            <div class="product-grid">
+                <article class="product"><a href="face_mask.jpeg"><img src="face_mask.jpeg" alt="Face mask" loading="lazy"></a><div><h3>Face Mask</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div></article>
+                <article class="product"><a href="market_bag.jpg"><img src="market_bag.jpg" alt="Market bag" loading="lazy"></a><div><h3>Market Bag</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div></article>
+                <article class="product"><a href="phone_pouch.jpg"><img src="phone_pouch.jpg" alt="Phone pouch" loading="lazy"></a><div><h3>Phone Pouch</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div></article>
+                <article class="product"><a href="book.jpg"><img src="book.jpg" alt="Sup Brand notebook" loading="lazy"></a><div><h3>Notebook</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div></article>
+                <article class="product"><a href="jugger.jpg"><img src="jugger.jpg" alt="Jugger" loading="lazy"></a><div><h3>Jugger</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div></article>
+                <article class="product"><a href="paper_bag.jpg"><img src="paper_bag.jpg" alt="Paper bag" loading="lazy"></a><div><h3>Paper Bag</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div></article>
+                <article class="product"><a href="surprise_drinks.jpg"><img src="surprise_drinks.jpg" alt="Sup Brand drink" loading="lazy"></a><div><h3>Can Drink</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div></article>
+                <article class="product"><a href="black_cap.JPG"><img src="black_cap.JPG" alt="Black Sup Brand cap" loading="lazy"></a><div><h3>Black Cap</h3><a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Buy on WhatsApp</a></div></article>
+            </div>
+        </section>
 
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">
-            <button>Buy White Bottle on WhatsApp</button>
-        </a>
+        <!-- CAMPAIGN -->
+        <section class="campaign">
+            <img src="trainstation_billboard.jpeg" alt="Sup Brand train station campaign" loading="lazy">
+            <div class="campaign-content">
+                <span class="label">SUP BRAND IN THE REAL WORLD</span>
+                <h2>More than products.<br>It's a relaxed culture.</h2>
+                <p>See how Sup Brand shows up beyond the screen.</p>
+                <a class="button button-light" href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">Talk to us on WhatsApp</a>
+            </div>
+        </section>
 
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">
-            <button>Buy Black Cap on WhatsApp</button>
-        </a>
+        <!-- VIDEOS -->
+        <section class="section media-section">
+            <div class="section-head">
+                <div>
+                    <span class="label">MEDIA</span>
+                    <h2>Made with love, from us to you</h2>
+                </div>
+                <p>Watch Sup Brand in motion.</p>
+            </div>
 
-        <br><br>
-
-        <a href="black_t-shirt.JPG">
-            <img src="black_t-shirt.JPG" alt="Black Sup Brand T-shirt" loading="lazy">
-        </a>
-
-        <a href="black_water_bottle.JPG">
-            <img src="black_water_bottle.JPG" alt="Black Sup Brand Water Bottle" loading="lazy">
-        </a>
-
-        <a href="hand_band.JPG">
-            <img src="hand_band.JPG" alt="White and Black Sup Brand Hand Bands" loading="lazy">
-        </a>
-
-        <a href="trainstation_billboard.jpeg">
-            <img src="trainstation_billboard.jpeg" alt="Sup Brand Train Station Campaign" loading="lazy">
-        </a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Black T-shirt on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Black Bottle on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Hand Band on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Our Campaign</button></a>
-
-        <h2>Plain Logo T-shirts, Long Sleeve and Caps</h2>
-
-        <a href="sup_t-shirt.jpg"><img src="sup_t-shirt.jpg" alt="Plain Logo T-shirt" loading="lazy"></a>
-        <a href="sup_male_t-shirt.jpg"><img src="sup_male_t-shirt.jpg" alt="Plain Logo T-shirt" loading="lazy"></a>
-        <a href="female_sup_cap.jpg"><img src="female_sup_cap.jpg" alt="Plain Logo Cap" loading="lazy"></a>
-        <a href="female_longsleeve.jpg"><img src="female_longsleeve.jpg" alt="Plain Long Sleeve" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Plain Logo T-shirt on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Plain Logo T-shirt on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Plain Logo Cap on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Plain Long Sleeve on WhatsApp</button></a>
-
-        <h2>Parents and Babies Wears</h2>
-
-        <a href="twin_longsleeves.jpg"><img src="twin_longsleeves.jpg" alt="Twin Long Sleeves" loading="lazy"></a>
-        <a href="baby_longsleeve.jpeg"><img src="baby_longsleeve.jpeg" alt="Baby Long Sleeve" loading="lazy"></a>
-        <a href="cover_all_for_baby.jpeg"><img src="cover_all_for_baby.jpeg" alt="Baby Cover All" loading="lazy"></a>
-        <a href="sup_cup.jpg"><img src="sup_cup.jpg" alt="Sup Brand Cup" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Twin Long Sleeve on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Baby Long Sleeve on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Cover All</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Tea Cup on WhatsApp</button></a>
-
-        <h2>Water, Hot and Ice</h2>
-
-        <a href="sup_cup.jpg"><img src="sup_cup.jpg" alt="Sup Tea Cup" loading="lazy"></a>
-        <a href="mug_on_table.jpg"><img src="mug_on_table.jpg" alt="Glass Mug" loading="lazy"></a>
-        <a href="mug_coffee.jpg"><img src="mug_coffee.jpg" alt="Coffee Mug" loading="lazy"></a>
-        <a href="cold_cap.jpg"><img src="cold_cap.jpg" alt="Cold Cap" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Tea Cup on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Glass Mug on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Coffee Mug on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Cold Cap on WhatsApp</button></a>
-
-        <h2>New Products</h2>
-
-        <a href="face_mask.jpeg"><img src="face_mask.jpeg" alt="Face Mask" loading="lazy"></a>
-        <a href="market_bag.jpg"><img src="market_bag.jpg" alt="Market Bag" loading="lazy"></a>
-        <a href="phone_pouch.jpg"><img src="phone_pouch.jpg" alt="Phone Pouch" loading="lazy"></a>
-        <a href="book.jpg"><img src="book.jpg" alt="Sup Brand Notebook" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Face Mask on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Market Bag on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Phone Pouch on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Notebook on WhatsApp</button></a>
-
-        <br><br>
-
-        <a href="jugger.jpg"><img src="jugger.jpg" alt="Jugger" loading="lazy"></a>
-        <a href="paper_bag.jpg"><img src="paper_bag.jpg" alt="Paper Bag" loading="lazy"></a>
-        <a href="billboard_logo_ad.jpeg"><img src="billboard_logo_ad.jpeg" alt="Sup Brand Billboard Campaign" loading="lazy"></a>
-        <a href="surprise_drinks.jpg"><img src="surprise_drinks.jpg" alt="Sup Brand Drink" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Jugger on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Paper Bag on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Our Campaign</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Drinks</button></a>
-
-        <h2>Exclusive Videos Made with Love from Us to You</h2>
-
-        <a href="all_black_and_white_cap_bottle_t-shirt.MP4">
-            <video src="all_black_and_white_cap_bottle_t-shirt.MP4" poster="cold_cap.jpg" controls preload="metadata"></video>
-        </a>
-
-        <a href="dacing.MP4">
-            <video src="dacing.MP4" poster="sup_t-shirt.jpg" controls preload="metadata"></video>
-        </a>
-
-        <a href="hand_band_video.MP4">
-            <video src="hand_band_video.MP4" poster="hand_band.JPG" controls preload="metadata"></video>
-        </a>
-
-        <a href="mug_coffee_video.MOV">
-            <video src="mug_coffee_video.MOV" poster="mug_coffee.jpg" controls preload="metadata"></video>
-        </a>
-
+            <div class="video-grid">
+                <article class="video-card">
+                    <video controls playsinline preload="metadata" poster="cold_cap.jpg">
+                        <source src="all_black_and_white_cap_bottle_t-shirt.MP4" type="video/mp4">
+                    </video>
+                </article>
+                <article class="video-card">
+                    <video controls playsinline preload="metadata" poster="sup_t-shirt.jpg">
+                        <source src="dacing.MP4" type="video/mp4">
+                    </video>
+                </article>
+                <article class="video-card">
+                    <video controls playsinline preload="metadata" poster="hand_band.JPG">
+                        <source src="hand_band_video.MP4" type="video/mp4">
+                    </video>
+                </article>
+                <article class="video-card">
+                    <video controls playsinline preload="metadata" poster="mug_coffee.jpg">
+                        <source src="mug_coffee_video.MOV" type="video/quicktime">
+                    </video>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <!-- =========================
-         MOBILE CONTENT
-    ========================== -->
-    <main class="mobile">
-
-        <h1>A more relaxed brand, that fosters relaxed culture!</h1>
-
-        <a href="white_cap.JPG"><img src="white_cap.JPG" alt="White Cap" loading="lazy"></a>
-        <a href="official_sup_t-shirt.jpeg"><img src="official_sup_t-shirt.jpeg" alt="White T-shirt" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy White Cap on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy White T-shirt on WhatsApp</button></a>
-
-        <br><br>
-
-        <a href="white_water_bottle.JPG"><img src="white_water_bottle.JPG" alt="White Bottle" loading="lazy"></a>
-        <a href="black_cap.JPG"><img src="black_cap.JPG" alt="Black Cap" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy White Bottle on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Black Cap on WhatsApp</button></a>
-
-        <br><br>
-
-        <a href="black_t-shirt.JPG"><img src="black_t-shirt.JPG" alt="Black T-shirt" loading="lazy"></a>
-        <a href="black_water_bottle.JPG"><img src="black_water_bottle.JPG" alt="Black Bottle" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Black T-shirt on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Black Bottle on WhatsApp</button></a>
-
-        <br><br>
-
-        <a href="hand_band.JPG"><img src="hand_band.JPG" alt="Hand Bands" loading="lazy"></a>
-        <a href="trainstation_billboard.jpeg"><img src="trainstation_billboard.jpeg" alt="Train Station Campaign" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Hand Band on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Our Campaign</button></a>
-
-        <h2>Plain Logo Products</h2>
-
-        <a href="sup_t-shirt.jpg"><img src="sup_t-shirt.jpg" alt="Plain Logo T-shirt" loading="lazy"></a>
-        <a href="sup_male_t-shirt.jpg"><img src="sup_male_t-shirt.jpg" alt="Plain Logo T-shirt" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Plain Logo T-shirt on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Plain Logo T-shirt on WhatsApp</button></a>
-
-        <br><br>
-
-        <a href="female_sup_cap.jpg"><img src="female_sup_cap.jpg" alt="Plain Logo Cap" loading="lazy"></a>
-        <a href="female_longsleeve.jpg"><img src="female_longsleeve.jpg" alt="Plain Long Sleeve" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Plain Logo Cap on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Long Sleeve on WhatsApp</button></a>
-
-        <h2>Parents and Babies Wears</h2>
-
-        <a href="twin_longsleeves.jpg"><img src="twin_longsleeves.jpg" alt="Twin Long Sleeve" loading="lazy"></a>
-        <a href="baby_longsleeve.jpeg"><img src="baby_longsleeve.jpeg" alt="Baby Long Sleeve" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Twin Long Sleeve on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Baby Long Sleeve on WhatsApp</button></a>
-
-        <br><br>
-
-        <a href="cover_all_for_baby.jpeg"><img src="cover_all_for_baby.jpeg" alt="Baby Cover All" loading="lazy"></a>
-        <a href="sup_cup.jpg"><img src="sup_cup.jpg" alt="Sup Cup" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Cover All on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Tea Cup on WhatsApp</button></a>
-
-        <h2>Water, Hot and Ice</h2>
-
-        <a href="sup_cup.jpg"><img src="sup_cup.jpg" alt="Sup Tea Cup" loading="lazy"></a>
-        <a href="mug_on_table.jpg"><img src="mug_on_table.jpg" alt="Glass Mug" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Tea Cup on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Glass Mug on WhatsApp</button></a>
-
-        <br><br>
-
-        <a href="mug_coffee.jpg"><img src="mug_coffee.jpg" alt="Coffee Mug" loading="lazy"></a>
-        <a href="cold_cap.jpg"><img src="cold_cap.jpg" alt="Cold Cap" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Coffee Mug on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Winter Cap on WhatsApp</button></a>
-
-        <h2>New Products</h2>
-
-        <a href="face_mask.jpeg"><img src="face_mask.jpeg" alt="Face Mask" loading="lazy"></a>
-        <a href="market_bag.jpg"><img src="market_bag.jpg" alt="Market Bag" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Face Mask on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Market Bag</button></a>
-
-        <br><br>
-
-        <a href="phone_pouch.jpg"><img src="phone_pouch.jpg" alt="Phone Pouch" loading="lazy"></a>
-        <a href="book.jpg"><img src="book.jpg" alt="Notebook" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Phone Pouch</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Notebook</button></a>
-
-        <br><br>
-
-        <a href="jugger.jpg"><img src="jugger.jpg" alt="Jugger" loading="lazy"></a>
-        <a href="paper_bag.jpg"><img src="paper_bag.jpg" alt="Paper Bag" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Jugger on WhatsApp</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Paper Bag on WhatsApp</button></a>
-
-        <br><br>
-
-        <a href="billboard_logo_ad.jpeg"><img src="billboard_logo_ad.jpeg" alt="Sup Brand Billboard" loading="lazy"></a>
-        <a href="surprise_drinks.jpg"><img src="surprise_drinks.jpg" alt="Sup Brand Drink" loading="lazy"></a>
-
-        <br><br>
-
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Our Campaign</button></a>
-        <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d"><button>Buy Can Drink on WhatsApp</button></a>
-
-        <h2>Exclusive Videos</h2>
-
-        <video src="all_black_and_white_cap_bottle_t-shirt.MP4" poster="cold_cap.jpg" controls preload="metadata"></video>
-        <video src="dacing.MP4" poster="sup_t-shirt.jpg" controls preload="metadata"></video>
-
-        <br><br>
-
-        <video src="hand_band_video.MP4" poster="hand_band.JPG" controls preload="metadata"></video>
-        <video src="mug_coffee_video.MOV" poster="mug_coffee.jpg" controls preload="metadata"></video>
-
-    </main>
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer>
-        Sup Brand &copy; 2026
+    <footer class="footer">
+        <div>
+            <a href="index.html" class="footer-brand">
+                <img src="sup_logo.JPG" alt="Sup Brand logo">
+                <strong>Sup Brand</strong>
+            </a>
+            <p>A more relaxed brand that fosters a relaxed culture.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="https://chat.whatsapp.com/Ik4qP1xSdpTBQ17QCoup6d">WhatsApp</a>
+        </div>
+        <small>© 2026 Sup Brand. All rights reserved.</small>
     </footer>
 
-    <script src="./app.js"></script>
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const mobileNav = document.getElementById("mobileNav");
 
+        menuToggle.addEventListener("click", () => {
+            const open = menuToggle.getAttribute("aria-expanded") === "true";
+            menuToggle.setAttribute("aria-expanded", String(!open));
+            menuToggle.setAttribute("aria-label", open ? "Open menu" : "Close menu");
+            mobileNav.classList.toggle("open", !open);
+        });
+
+        mobileNav.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Open menu");
+                mobileNav.classList.remove("open");
+            });
+        });
+    </script>
 </body>
 </html>
